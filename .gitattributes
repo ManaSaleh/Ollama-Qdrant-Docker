@@ -1,0 +1,2 @@
+Data/metadata_with_chunck_embeddings.pkl filter=lfs diff=lfs merge=lfs -text
+indexing/faiss_index.index filter=lfs diff=lfs merge=lfs -text

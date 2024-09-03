@@ -1,0 +1,35 @@
+services:
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - "6333:6333"
+    networks:
+      - todocker_unified_network
+    volumes:
+      - ./qdrant_data:/qdrant/storage
+
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    networks:
+      - todocker_unified_network
+    volumes:
+      - ollama_models:/root/.ollama/models
+
+  search_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - todocker_unified_network
+
+networks:
+  todocker_unified_network:
+    driver: bridge
+
+volumes:
+  qdrant_data:
+  ollama_models:
