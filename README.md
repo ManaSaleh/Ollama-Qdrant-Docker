@@ -10,7 +10,7 @@ This project leverages Docker to integrate Ollama and Qdrant for an efficient an
 - **indexing/**: Includes FAISS index files that enable fast similarity searches on vector data.
 - **Notebook/**: Jupyter notebooks that provide exploratory data analysis (EDA), embedding visualization, and indexing workflows.
 - **qdrant_data/**: Stores data specific to Qdrant collections, such as vectorized embeddings and configurations.
-- **Scripts/**: Python scripts designed for data preprocessing, model training, and automated tasks related to data ingestion and retrieval.
+- **Scripts/**: Python scripts designed for data preprocessing and automated tasks related to data ingestion and retrieval.
 - **ToDocker/**: Contains Docker-related configurations and files necessary for container deployment.
 
 ## Features
@@ -96,10 +96,6 @@ This project leverages Docker to integrate Ollama and Qdrant for an efficient an
 ## Contributing
 
 Contributions are welcome. Please fork the repository, create a new branch, and submit a pull request for any improvements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
